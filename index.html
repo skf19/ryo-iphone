@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f4f6">
+  <title>My Virtual iPhone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="phone" aria-label="Virtual iPhone">
+      <div class="screen" id="screen">
+        <div class="wallpaper"></div>
+        <div class="status-bar">
+          <span id="status-time">9:41</span>
+          <span class="status-right">●●●　◖　▰</span>
+        </div>
+
+        <section class="lock-screen" id="lock-screen">
+          <div class="lock-top">MY VIRTUAL IPHONE</div>
+          <div class="lock-date" id="lock-date">토요일, 11월 7일</div>
+          <div class="lock-time" id="lock-time">9:41</div>
+          <div class="lock-bottom">
+            <button class="round-control" aria-label="손전등">◉</button>
+            <button class="unlock-button" id="unlock-button">위로 밀어 잠금 해제 ↑</button>
+            <button class="round-control" aria-label="카메라">⌕</button>
+          </div>
+        </section>
+
+        <section class="home-screen hidden" id="home-screen">
+          <div class="welcome">
+            <p class="eyebrow">SATURDAY, NOVEMBER 7</p>
+            <h1>Good evening.</h1>
+            <p class="subline">오늘도 좋은 하루 보내 ♡</p>
+          </div>
+          <div class="app-grid">
+            <button class="app" data-app="messages"><span class="app-icon messages">●</span><span>Messages</span></button>
+            <button class="app" data-app="photos"><span class="app-icon photos">✿</span><span>Photos</span></button>
+            <button class="app" data-app="notes"><span class="app-icon notes">▤</span><span>Notes</span></button>
+            <button class="app" data-app="calendar"><span class="app-icon calendar"><small>NOV</small><b>7</b></span><span>Calendar</span></button>
+            <button class="app" data-app="music"><span class="app-icon music">♫</span><span>Music</span></button>
+            <button class="app" data-app="weather"><span class="app-icon weather">☼</span><span>Weather</span></button>
+            <button class="app" data-app="phone"><span class="app-icon phone">⌕</span><span>Phone</span></button>
+            <button class="app" data-app="settings"><span class="app-icon settings">⚙</span><span>Settings</span></button>
+          </div>
+          <div class="dock">
+            <button class="app" data-app="phone"><span class="app-icon phone">⌕</span><span>Phone</span></button>
+            <button class="app" data-app="messages"><span class="app-icon messages">●</span><span>Messages</span></button>
+            <button class="app" data-app="photos"><span class="app-icon photos">✿</span><span>Photos</span></button>
+            <button class="app" data-app="music"><span class="app-icon music">♫</span><span>Music</span></button>
+          </div>
+        </section>
+
+        <section class="app-window hidden" id="app-window">
+          <header class="app-header">
+            <button class="back-button" id="back-button">‹ Home</button>
+            <span id="app-title">App</span>
+            <span class="header-spacer"></span>
+          </header>
+          <div class="app-content" id="app-content"></div>
+        </section>
+        <div class="home-indicator" id="home-indicator"></div>
+      </div>
+    </section>
+    <footer class="outside-caption">A little digital world, just for you.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
